@@ -83,10 +83,10 @@ class _CallPageState extends State<CallPage> {
       int uid,
       int elapsed,
     ) {
-      setState(() {
-        final info = 'onJoinChannel: $channel, uid: $uid';
-        _infoStrings.add(info);
-      });
+      // setState(() {
+      //   final info = 'onJoinChannel: $channel, uid: $uid';
+      //   _infoStrings.add(info);
+      // });
     };
 
     AgoraRtcEngine.onLeaveChannel = () {
@@ -307,7 +307,9 @@ class _CallPageState extends State<CallPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Agora Flutter QuickStart'),
+        backgroundColor: Color(0xff158274),
+        title: Text('Meet'),
+        centerTitle: true,
       ),
       backgroundColor: Colors.black,
       body: Center(

@@ -1,19 +1,29 @@
+import 'dart:async';
+import 'package:agora_flutter_quickstart/src/pages/firstPage.dart';
 import 'package:flutter/material.dart';
+import 'package:camera/camera.dart';
 
-import './src/pages/index.dart';
 
-void main() => runApp(MyApp());
+List<CameraDescription> cameras;
+
+Future<void> main() async {
+  
+  WidgetsFlutterBinding.ensureInitialized();
+  cameras = await availableCameras();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: IndexPage(),
+      home: FirstPage(cameras),
     );
   }
 }

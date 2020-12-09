@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "564020761529",
+    "firebase_url": "https://compound-2b7ef.firebaseio.com",
+    "project_id": "compound-2b7ef",
+    "storage_bucket": "compound-2b7ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564020761529:android:e2ad089eea88033f2e5c68",
+        "android_client_info": {
+          "package_name": "com.example.agoraflutterquickstart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564020761529-psp5eldgei3bojb24rn5kgrl9jq5q673.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX3ZFvXsf-8C0TruaBr0f6i9WAXvJjhBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564020761529-psp5eldgei3bojb24rn5kgrl9jq5q673.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
